@@ -1,0 +1,14 @@
+prefix=/home/csz/Acer/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/home/csz/Acer/ffmpeg/build/lib
+includedir=/home/csz/Acer/ffmpeg/build/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.18.100
+Requires: libavutil >= 56.14.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz -lx264 -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

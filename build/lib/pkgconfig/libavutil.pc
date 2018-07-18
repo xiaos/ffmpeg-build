@@ -1,0 +1,14 @@
+prefix=/home/csz/Acer/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/home/csz/Acer/ffmpeg/build/lib
+includedir=/home/csz/Acer/ffmpeg/build/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.14.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
